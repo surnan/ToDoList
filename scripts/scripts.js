@@ -12,17 +12,23 @@ function addToDo() {
   let myName = temp.value;
   let dueDate = temp2.value;
 
-  let newHTMLDiv = document.querySelector('.list-todo-array-div');
+  let newHTMLDiv = document.querySelector('.js-list-todo-array-div');
   let newHTML = "";
 
   toDoList.push({ myName, dueDate })
 
   for (i = 0; i < toDoList.length; i++) {
     let newElement = toDoList[i];
-    // newHTML += `<div class="showInRow">`
-    newHTML += `<p>${newElement.myName}</p>`;
-    newHTML += `<p>${newElement.dueDate}</p>`;
-    // newHTML += `</div>`
+    newHTML += `<p class="name-toDo">${newElement.myName}</p>`;
+    newHTML += `<p class="due-date">${newElement.dueDate}</p>`;
+    newHTML += `   <button class="remove-todo-button jsRemoveButtonClick"
+                    onclick="removeToDo()">
+                      Delete
+                  </button>`;
   }
   newHTMLDiv.innerHTML = newHTML;
+}
+
+function removeToDo() {
+  console.log('remove ToDo called');
 }

@@ -15,6 +15,7 @@ body {
 
 .input-date{
   height: 30px;
+  font-size: 18px;
   padding: 1px;
 }
 
@@ -26,11 +27,34 @@ body {
   font-size: 16px;
 }
 
-/* .showInRow{
-  display: grid;
-} */
+.remove-todo-button{
+  font-size: 14px;
+  padding: 6px 40px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+}
 
-.list-todo-array-div{
+.list-todo-array-div,
+.js-list-todo-array-div{
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  align-items: center;
+  column-gap: 15px;
+  /* row-gap: 5px */
+}
+
+
+/* newHTML += `<p class="name-toDo">${newElement.myName}</p>`;
+newHTML += `<p class="due-date">${newElement.dueDate}</p>`; */
+
+.name-toDo{
+  background-color: yellow;
+  padding-left: 8px;
+}
+
+.due-date{
+  /* text-align: center; */
+  padding-left: 6px;
+  background-color: pink;
 }
