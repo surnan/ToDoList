@@ -3,17 +3,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.inputName{
+.input-name{
   font-size: 16px;
   padding: 6px;
 }
 
-.inputName::placeholder {
+.input-name::placeholder {
   font-weight: 300;
   color: lightgrey;
 }
 
-.inputDate{
+.input-date{
   height: 30px;
   padding: 1px;
 }
