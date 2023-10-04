@@ -4,9 +4,9 @@ function addToDo(){
 const inputElement = document.querySelector('.js-name-input');
 const name = inputElement.value;
 
-console.log('inputElement', inputElement);
+const inputElementDate = document.querySelector('.js-input-date');
+const date = inputElementDate.value;
+
 console.log('name', name);
-
-
-  console.log('button clicked')
+console.log('date', date);
 }
