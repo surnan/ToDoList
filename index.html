@@ -10,11 +10,28 @@
 </head>
 
 <body>
+  <div>
   <p>Todo List</p>
-  <input class="inputName" type="text" placeholder="Enter task ....">
-  <input class="inputDate" type="date">
-  <button class="add-todo-button" >Add</button>
-
-
+  <input
+    class="inputName"
+    type="text"
+    placeholder="Enter task ....
+  ">
+  <input
+    class="inputDate" type="date">
+  <button
+    class="add-todo-button
+          jsAddButtonClick"
+    onclick="jsAddButtonClick()"
+    >
+    Add
+  </button>
+</div>
 </body>
+
+<script>
+  function jsAddButtonClick(){
+  console.log('button clicked')
+}
+</script>
 </html>
