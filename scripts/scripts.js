@@ -19,8 +19,10 @@ function addToDo() {
 
   for (i = 0; i < toDoList.length; i++) {
     let newElement = toDoList[i];
+    // newHTML += `<div class="showInRow">`
     newHTML += `<p>${newElement.myName}</p>`;
     newHTML += `<p>${newElement.dueDate}</p>`;
+    // newHTML += `</div>`
   }
   newHTMLDiv.innerHTML = newHTML;
 }

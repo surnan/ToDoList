@@ -25,3 +25,12 @@ body {
   color: white;
   font-size: 16px;
 }
+
+/* .showInRow{
+  display: grid;
+} */
+
+.list-todo-array-div{
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
